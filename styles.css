@@ -25,7 +25,7 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: rgba(25, 20, 97, 0.637);
+  background:linear-gradient(rgba(25, 20, 97, 0.39),transparent);
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -33,7 +33,7 @@ a:hover {
   transition:0.2s;
 }
 .main-nav:hover {
-  background: rgba(25,20,97);
+  background:rgb(25, 20, 97)
 }
 .nav {
   display: flex;
@@ -43,7 +43,8 @@ a:hover {
   margin: 0 auto;
   padding: 0;
 }
-
+.name {
+  color: white;
 }
 .nav .name {
     display: block;
@@ -57,12 +58,12 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: white;
 }
 
 header {
   text-align: center;
-  background:linear-gradient(transparent,white),
+  background:linear-gradient(rgba(25, 20, 97),transparent,white),
   url('images/Orlando.jpg') no-repeat top center;
   background-size:cover;
   overflow: hidden;
@@ -84,17 +85,14 @@ header .profile-image:hover {
   border:10px solid rgba(25,20,97);
 }
 .tag {
-  background-color: #efefef;
-  color: black;
+  background-color:rgba(25, 20, 97);
+  color: white;
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
+  box-shadow: whitesmoke;
 } 
-.location {
-  background-color: #222;
-  color: yellow;
-}
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
@@ -172,6 +170,16 @@ a.social:hover {
 .clearfix {
   clear: both;
 }
+.picture-venus {
+  width: 300px;
+  height: 300px;
+  border: 6px solid white;
+  border-radius: 7%;
+}
+.picture-venus:hover {
+  opacity: 0.7;
+  border: 10px solid rgba(128, 128, 128, 0.123);
+}
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
@@ -211,13 +219,3 @@ a.social:hover {
 
 }
 
-.picture-venus {
-  width: 300px;
-  height: 300px;
-  border: 6px solid white;
-  border-radius: 7%;
-}
-.picture-venus:hover {
-  opacity: 0.7;
-  border: 10px solid rgba(128, 128, 128, 0.123);
-}
