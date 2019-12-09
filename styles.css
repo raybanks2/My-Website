@@ -91,7 +91,6 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-  box-shadow: whitesmoke;
 } 
 .card {
   margin: 30px;
@@ -169,6 +168,18 @@ a.social:hover {
 }
 .clearfix {
   clear: both;
+}
+.photo-inset {
+  width: 300px;
+  height: 200px;
+  border: 6px solid white;
+  border-radius: 7%;
+}
+.photo-lockup{
+  width: 300px;
+  height: 300px;
+  border: 6px solid white;
+  border-radius: 7%;
 }
 .picture-venus {
   width: 300px;
