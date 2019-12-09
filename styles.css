@@ -92,7 +92,7 @@ header .profile-image:hover {
   display: table;
   margin: 10px auto;
 } 
-.card {
+.article {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
@@ -102,7 +102,7 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
-.card:hover {
+.article:hover {
   border-color: #7153e0;
 }
 ul.skills {
