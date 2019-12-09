@@ -9,7 +9,7 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background:white;
 }
 /* Link Styles */
 
@@ -25,11 +25,15 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: rgba(25, 20, 97, 0.637);
   min-height: 30px;
   padding: 10px;
   position: fixed;
   text-align: center;
+  transition:0.2s;
+}
+.main-nav:hover {
+  background: rgba(25,20,97);
 }
 .nav {
   display: flex;
@@ -40,6 +44,7 @@ a:hover {
   padding: 0;
 }
 
+}
 .nav .name {
     display: block;
     margin-right: auto;
@@ -57,8 +62,9 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/Orlando.jpg') no-repeat top center ;
-  background-size: cover;
+  background:linear-gradient(transparent,white),
+  url('images/Orlando.jpg') no-repeat top center;
+  background-size:cover;
   overflow: hidden;
   padding-top: 60px;
 }
@@ -70,11 +76,12 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: none;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(.9);
+  border:10px solid rgba(25,20,97);
 }
 .tag {
   background-color: #efefef;
@@ -92,17 +99,15 @@ header .profile-image:hover {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
-  text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
+  text-align: center;
+  background: rgb(243, 250, 255);
+  border-bottom: 10px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
 }
 .card:hover {
   border-color: #7153e0;
-  transform: scale(1.1)
 }
-
 ul.skills {
   padding: 0;
   text-align: center;
@@ -209,5 +214,10 @@ a.social:hover {
 .picture-venus {
   width: 300px;
   height: 300px;
-  border: 3px solid white;
+  border: 6px solid white;
+  border-radius: 7%;
+}
+.picture-venus:hover {
+  opacity: 0.7;
+  border: 10px solid rgba(128, 128, 128, 0.123);
 }
